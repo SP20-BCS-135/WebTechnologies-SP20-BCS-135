@@ -1,0 +1,160 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat-black", sans-serif;
+  font-weight: 700;
+  font-size: 3vw;
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 800;
+  font-family: "Montserrat-black", sans-serif;
+  color: #fff;
+}
+
+/* Custom Classes */
+
+.btn {
+  font-family: "Montserrat-black", sans-serif;
+  font-weight: 700;
+}
+
+.nav-link {
+  font-family: "Montserrat-black", sans-serif;
+  font-weight: 700;
+}
+
+.navbar-brand {
+  font-family: "Montserrat-black", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.phoneImageCont {
+  width: 55%;
+  margin-left: 25%;
+}
+
+.featuresCont {
+  margin: 5rem 0;
+  padding: 0px 100px;
+}
+
+.featureIcon {
+  color: #dc3545;
+  margin: 1rem 0;
+}
+
+.featureIcon:hover {
+  color: black;
+  animation-name: rotate;
+  animation-duration: 0.8s;
+}
+
+#testimonials {
+  padding: 5% 28% 5% 28%;
+  text-align: center;
+  background-color: #dc3545;
+}
+
+#press {
+  padding: 0 10%;
+  text-align: center;
+  background-color: #dc3545;
+}
+
+.devoloperImage {
+  border-radius: 50%;
+  margin: 5%;
+  width: 30%;
+  height: 30%;
+}
+
+.sponsorsLogo {
+  margin: 1.5rem;
+  width: 15%;
+}
+
+.appsByDS {
+  width: 40%;
+  padding: 1rem;
+}
+
+#downloadTag {
+  background-color: #dc3545;
+  text-align: center;
+  padding: 5% 25%;
+}
+
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 5%;
+}
+
+.socialIcon {
+  margin: 1%.5%;
+  color: #dc3545;
+}
+
+.devName{
+  animation: right_to_left 2s ease;
+}
+/* For conditional styling  */
+@media (max-width: 768px) {
+  .appsByDS {
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .phoneImageCont {
+    width: 55%;
+    margin-left: 0;
+  }
+
+  .devQuote {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
+/* Animations */
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes right_to_left {
+  from {
+    margin-left: 50%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes left_to_right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
