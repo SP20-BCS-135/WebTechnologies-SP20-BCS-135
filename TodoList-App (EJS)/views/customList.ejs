@@ -1,0 +1,40 @@
+<%-include("header") %>
+<%-include("logout") %>
+
+
+<div class="box" id="heading">
+  <h1><%= dateToDay %></h1>
+</div>
+
+<div class="box">
+  <% check.forEach(function(x){ %>
+  <form action="/<%=dateToDay%>" method="post">
+    <div class="item">
+      <input
+        type="checkbox"
+        value="<%= x._id %>"
+        name="chkbox"
+        onChange="this.form.submit()"
+      />
+      <p><%=x.todo %></p>
+    </div>
+  </form>
+  <% }); %>
+  <!-- Here we are making a custom post req based on the title which is the dynamic parametre given in URL -->
+  <form action="/<%=dateToDay%>" class="item" method="post">
+    <input
+      type="text"
+      name="newTodo"
+      placeholder="Add new..."
+      autocomplete="off"
+      required
+    />
+    <button type="submit" class="animeB" name="button">+</button>
+  </form>
+</div>
+<div class="newTodo">
+  <a href="/" class="myButton">Make new Todo</a>
+  <a href="/listNames/lists" class="myButton">See all lists ❓</a>
+</div>
+
+<%-include("footer") %>

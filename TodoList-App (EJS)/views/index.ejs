@@ -1,0 +1,22 @@
+<%-include("header") %> <%-include("logout") %>
+<div class="box anime" id="heading">
+  <h1><%=title%></h1>
+</div>
+
+<div class="box anime2">
+  <form action="/" class="item" method="post">
+    <input
+      type="text"
+      name="listName"
+      placeholder="Name your Todo List.."
+      autocomplete="off"
+      required
+    />
+    <button type="submit" class="animeB" name="button">+</button>
+  </form>
+</div>
+<div class="newTodo">
+  <a href="/listNames/lists" class="myButton">See all lists ❓</a>
+</div>
+
+<%-include("footer") %>

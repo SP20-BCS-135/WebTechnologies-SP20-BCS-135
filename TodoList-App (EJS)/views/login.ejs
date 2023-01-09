@@ -1,0 +1,22 @@
+<%-include("header") %>
+<div class="login-page">
+  <div class="form">
+    <form action="/login" method="post" class="login-form">
+      <img src="/icon.png" alt="logo" class="imging">
+      <input type="email" placeholder="email" name="username" required />
+      <input type="password" placeholder="password" name="password" required/>
+      <div class="newTodo">
+        <button type="submit" class="myButton" name="button">Login</button>
+        <small style="margin: 0 0.8rem; color: gray">-OR-</small>
+        <a href="/auth/google" class="myButton"
+          ><i class="fa-brands fa-google"></i>oogle Sign In</a
+        >
+      </div>
+      <p class="message">
+        Not registered? <a href="/register">Create an account</a>
+      </p>
+    </form>
+  </div>
+</div>
+
+<%-include("footer") %>
