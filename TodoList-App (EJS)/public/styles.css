@@ -1,0 +1,237 @@
+html {
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #18161c 50%, #496aee 50%);
+  min-height: 1000px;
+  font-family: "helvetica neue";
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #00204a;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: #496aee;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+.logout {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  color: wheat;
+  position: fixed;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button.animeB {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #496aee;
+  color: #fff;
+  font-size: 30px;
+  /* padding-bottom: 5px; */
+  border-width: 0;
+  animation: rotate 2s linear infinite;
+  margin-right: 1rem;
+}
+
+button:hover {
+  animation: none;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #496aee;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.imging {
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+
+.newTodo {
+  text-align: center;
+}
+.myButton {
+  background-color: #00204a;
+  border-radius: 20px;
+  border: 1px solid #5337df;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #00204a;
+  margin-bottom: 1rem;
+}
+.myButton:hover {
+  background-color: #2a4dbf;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.circle {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  border-radius: 10%;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4caf50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* .container:before,
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #ef3b3a;
+}

@@ -1,0 +1,12 @@
+<%-include("header") %>
+<%-include("logout") %>
+<div class="box" id="heading">
+  <% check.forEach(function(x,i){ %>
+  <a href="/<%=x.todo%>"><h1><%=i+1%>) <%=x.todo%></h1></a>
+  <% }); %>
+</div>
+<div class="newTodo">
+  <a href="/" class="myButton">Make new Todo</a>
+</div>
+
+<%-include("footer") %>
